@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cwnvi8xpquk5l"]
+
+[ext_resource type="Script" uid="uid://fd51qejsp480" path="res://scripts/character_body_2d.gd" id="1_evsft"]
+[ext_resource type="Texture2D" uid="uid://id705feumub" path="res://Nave.png" id="2_d73q4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qjlmp"]
+size = Vector2(119.75, 67.5)
+
+[node name="Node2D" type="Node2D" unique_id=31410233]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1662859108]
+script = ExtResource("1_evsft")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=457006750]
+position = Vector2(464.5, 237.75)
+scale = Vector2(3.5937502, 3.0156243)
+texture = ExtResource("2_d73q4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1252262974]
+position = Vector2(463, 230)
+shape = SubResource("RectangleShape2D_qjlmp")
+
+[node name="Lola" type="Node" parent="CharacterBody2D" unique_id=922563595]
+
+[node name="2333" type="Node2D" parent="CharacterBody2D" unique_id=258065209]
+
+[node name="Holii" type="Node2D" parent="." unique_id=301636226]
+position = Vector2(463, 230)
